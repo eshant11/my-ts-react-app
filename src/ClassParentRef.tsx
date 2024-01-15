@@ -10,7 +10,7 @@ import ClassRefInput from './ClassRefInput'
       this.componentRef =React.createRef()
     }
     handleFocus=()=>{
-        //focusInputRef child ki method hai focus karne ke liye
+        //focusInputRef child ki method hai focus karne ke li
 this.componentRef.current?.focusInputRef()
     }
   render() {
