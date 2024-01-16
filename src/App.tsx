@@ -16,6 +16,7 @@ import ParentComp from "./ParentComp";
 import RefDemo from "./RefDemo";
 import ClassRefInput from "./ClassRefInput";
 import ClassParentRef from "./ClassParentRef";
+import PortalDemo from "./PortalDemo";
 
 const  App= ()=> {
   // const address={city:"khandwa",state:"M.P."}
@@ -38,6 +39,7 @@ const  App= ()=> {
 <ParentComp/>
 <RefDemo/>
 <ClassParentRef/>
+<PortalDemo/>
 </>
 
   );
