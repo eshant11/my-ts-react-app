@@ -3,8 +3,6 @@ import ReactDOM  from 'react-dom'
  class PortalDemo extends Component<any,any> {
     constructor(props:any) {
       super(props)
-    
-     
     }
   render() {
     return ReactDOM.createPortal(

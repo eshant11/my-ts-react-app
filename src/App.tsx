@@ -17,6 +17,9 @@ import RefDemo from "./RefDemo";
 import ClassRefInput from "./ClassRefInput";
 import ClassParentRef from "./ClassParentRef";
 import PortalDemo from "./PortalDemo";
+import Errors from "./Errors";
+import ErrorBoundary from "./ErrorBoundary";
+import HttpGet from "./HttpGet";
 
 const  App= ()=> {
   // const address={city:"khandwa",state:"M.P."}
@@ -40,6 +43,19 @@ const  App= ()=> {
 <RefDemo/>
 <ClassParentRef/>
 <PortalDemo/>
+{/* <ErrorBoundary>
+<Errors name="Eshant" />
+</ErrorBoundary>
+<ErrorBoundary>
+<Errors name="Mishra"/>
+
+</ErrorBoundary>
+<ErrorBoundary>
+<Errors name="Aditya"/>
+
+</ErrorBoundary> */}
+<HttpGet/>
+
 </>
 
   );
