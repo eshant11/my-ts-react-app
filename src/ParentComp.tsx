@@ -3,7 +3,7 @@ import RegComponent from './RegComponent';
 import PureComp from './PureComp';
 import FunctionalPureComp from './FunctionalPureComp';
 
- class ParentComp extends Component<{},{name:string}> {
+ class ParentComp extends PureComponent<{},{name:string}> {
   constructor(props:any) {
     super(props)
   
