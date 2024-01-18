@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { error } from 'console'
+
 import { Component } from 'react'
 
 class HttpGet extends Component<any, { data: any,errorMsg:string }> {

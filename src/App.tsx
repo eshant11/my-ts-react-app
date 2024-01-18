@@ -20,6 +20,10 @@ import PortalDemo from "./PortalDemo";
 import Errors from "./Errors";
 import ErrorBoundary from "./ErrorBoundary";
 import HttpGet from "./HttpGet";
+import PostForm from "./PostForm";
+import ClickCounter from "./ClickCounterHOC";
+import ClickCounterHOC from "./ClickCounterHOC";
+import HoverCounterHOC from "./HoverCounterHOC";
 
 const  App= ()=> {
   // const address={city:"khandwa",state:"M.P."}
@@ -54,7 +58,10 @@ const  App= ()=> {
 <Errors name="Aditya"/>
 
 </ErrorBoundary> */}
-<HttpGet/>
+{/* <HttpGet/>
+<PostForm/> */}
+<ClickCounterHOC/>
+<HoverCounterHOC/>
 
 </>
 
