@@ -24,6 +24,11 @@ import PostForm from "./PostForm";
 import ClickCounter from "./ClickCounterHOC";
 import ClickCounterHOC from "./ClickCounterHOC";
 import HoverCounterHOC from "./HoverCounterHOC";
+import PropsRenderCounter from "./PropsRenderCounter";
+import PropsClickCounter from "./PropsClickCounter";
+import PropsCounter from "./PropsCounter";
+import PropsHoverCounter from "./PropsHoverCounter";
+
 
 const  App= ()=> {
   // const address={city:"khandwa",state:"M.P."}
@@ -34,7 +39,7 @@ const  App= ()=> {
   {/* children component for this component which can be accessable using props.children */}
   <h1>ddssdfnmh</h1>
 </ClassComponent>
-<StateComponent />
+{/* <StateComponent />
 <CounterSetSate name="eshant"/>
 <ClassClick/>
 <EventBinding/>
@@ -46,7 +51,7 @@ const  App= ()=> {
 <ParentComp/>
 <RefDemo/>
 <ClassParentRef/>
-<PortalDemo/>
+<PortalDemo/> */}
 {/* <ErrorBoundary>
 <Errors name="Eshant" />
 </ErrorBoundary>
@@ -60,8 +65,13 @@ const  App= ()=> {
 </ErrorBoundary> */}
 {/* <HttpGet/>
 <PostForm/> */}
-<ClickCounterHOC/>
-<HoverCounterHOC/>
+{/* <ClickCounterHOC name="Eshant"/>
+<HoverCounterHOC  /> */}
+
+{/* <PropsRenderCounter render={(isLoggedIn:boolean)=>isLoggedIn?"Eshant":"Guest"}/> */}
+<PropsCounter render={(count:number,incrementCount:()=>void)=><PropsClickCounter count={count} incrementCount={incrementCount}/>}/>
+<PropsCounter render={(count:number,incrementCount:()=>void)=><PropsHoverCounter count={count} incrementCount={incrementCount}/>}/>
+
 
 </>
 
