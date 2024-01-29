@@ -13,9 +13,14 @@ const HOC =(OriginalComponent:any)=>{
     countHandler() {
         this.setState((prevState) => ({ count: prevState.count + 1 }))
     }
+
+    
   render() {
+    // props passed in clicked counter shown here
+    // console.log(this.props.name);
+    
     return (
-    <OriginalComponent count={this.state.count} countHandler={this.countHandler}/>
+    <OriginalComponent count={this.state.count} countHandler={this.countHandler} {...this.props}/>
     )
   }
 }

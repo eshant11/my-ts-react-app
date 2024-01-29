@@ -3,6 +3,7 @@ import HOC from './HOC'
 interface ComponentProps{
     count:number,
     countHandler: ()=>void;
+    name:string;
 }
  class HoverCounterHOC extends Component<ComponentProps>  {
     constructor(props:ComponentProps) {
@@ -13,7 +14,7 @@ interface ComponentProps{
         const  {countHandler,count}= this.props
         return (
             <>
-            <h1 onMouseOver={countHandler}>{count}</h1>
+            <h1 onMouseOver={countHandler}>{count}{this.props.name}</h1>
                
                 </>
         )
