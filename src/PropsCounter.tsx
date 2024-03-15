@@ -24,4 +24,4 @@ interface Props {
   }
 }
 
-export default PropsCounter
+export default PropsCounter;

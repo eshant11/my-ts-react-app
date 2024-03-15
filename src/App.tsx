@@ -8,7 +8,7 @@ import FunctionClick from "./ClassClick";
 import ClassClick from "./ClassClick";
 import EventBinding from "./EventBinding";
 import ParentComponent from "./ParentComponent";
-import {ConditionalRenderring} from "./ConditionalRenderring";
+import { ConditionalRenderring } from "./ConditionalRenderring";
 import { ListRendering } from "./ListRendering";
 import HandleForm from "./HandleForm";
 import Mounting from "./Mounting";
@@ -28,18 +28,23 @@ import PropsRenderCounter from "./PropsRenderCounter";
 import PropsClickCounter from "./PropsClickCounter";
 import PropsCounter from "./PropsCounter";
 import PropsHoverCounter from "./PropsHoverCounter";
+import ComponentA from "./ComponentA";
+import { UserProvider } from "./UserContext";
+import ComponentB from "./ComponentB";
+import ReactShare from "./ReactShare";
+import GoogleMapIntegration from "./googleMapIntegration/GoogleMapIntegration";
 
 
-const  App= ()=> {
+const App = () => {
   // const address={city:"khandwa",state:"M.P."}
 
- return (<>
- {/* <Greet message ={"Hello, Good Morning"}name={"Eshant"} address={address}/> */}
-<ClassComponent name="Eshant">
-  {/* children component for this component which can be accessable using props.children */}
-  <h1>ddssdfnmh</h1>
-</ClassComponent>
-{/* <StateComponent />
+  return (<>
+    {/* <Greet message ={"Hello, Good Morning"}name={"Eshant"} address={address}/> */}
+    <ClassComponent name="Eshant">
+      {/* children component for this component which can be accessable using props.children */}
+      <h1>ddssdfnmh</h1>
+    </ClassComponent>
+    {/* <StateComponent />
 <CounterSetSate name="eshant"/>
 <ClassClick/>
 <EventBinding/>
@@ -47,12 +52,12 @@ const  App= ()=> {
 <ConditionalRenderring/>
 <ListRendering/>
 <HandleForm/>
+<RefDemo/>
 <Mounting/>
 <ParentComp/>
-<RefDemo/>
 <ClassParentRef/>
 <PortalDemo/> */}
-{/* <ErrorBoundary>
+    {/* <ErrorBoundary>
 <Errors name="Eshant" />
 </ErrorBoundary>
 <ErrorBoundary>
@@ -63,18 +68,21 @@ const  App= ()=> {
 <Errors name="Aditya"/>
 
 </ErrorBoundary> */}
-{/* <HttpGet/>
+    {/* <HttpGet/>
 <PostForm/> */}
-{/* <ClickCounterHOC name="Eshant"/>
+    {/* <ClickCounterHOC name="Eshant"/>
 <HoverCounterHOC  /> */}
 
-{/* <PropsRenderCounter render={(isLoggedIn:boolean)=>isLoggedIn?"Eshant":"Guest"}/> */}
-<PropsCounter render={(count:number,incrementCount:()=>void)=><PropsClickCounter count={count} incrementCount={incrementCount}/>}/>
-<PropsCounter render={(count:number,incrementCount:()=>void)=><PropsHoverCounter count={count} incrementCount={incrementCount}/>}/>
+    {/* <PropsRenderCounter render={(isLoggedIn:boolean)=>isLoggedIn?"Eshant":"Guest"}/> */}
+    <PropsCounter render={(count: number, incrementCount: () => void) => <PropsClickCounter count={count} incrementCount={incrementCount} />} />
+    <PropsCounter render={(count: number, incrementCount: () => void) => <PropsHoverCounter count={count} incrementCount={incrementCount} />} />
+    {/* <UserProvider value={"Eshant"}>
+      <ComponentA />
+    </UserProvider> */}
+    <ReactShare />
+    <GoogleMapIntegration />
 
-
-</>
-
+  </>
   );
 }
 
